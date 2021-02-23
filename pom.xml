@@ -11,8 +11,7 @@
      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <maven.compiler.source>11</maven.compiler.source>
 	<maven.compiler.target>11</maven.compiler.target>
-	<start-class>org.emme.msa.discover.Application</start-class>
-    <java.version>11</java.version>
+	<java.version>11</java.version>
 </properties>
 <dependencyManagement>
     <dependencies>
@@ -45,35 +44,9 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-          <requiresUnpack>
-            <dependency>
-              <groupId>com.netflix.eureka</groupId>
-              <artifactId>eureka-core</artifactId>
-            </dependency>
-            <dependency>
-              <groupId>com.netflix.eureka</groupId>
-              <artifactId>eureka-client</artifactId>
-            </dependency>
-          </requiresUnpack>
-        </configuration>
+
       </plugin>
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
-        <version>1.0.0</version>
-        <configuration>
-          <appName>microservicediscover</appName>
-          
-         
-        </configuration>
-      </plugin>
+
     </plugins>
   </build>
 </project>

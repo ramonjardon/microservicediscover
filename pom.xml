@@ -69,8 +69,8 @@
         <artifactId>heroku-maven-plugin</artifactId>
         <version>1.0.0</version>
         <configuration>
-          <appName>${heroku.appName}</appName>
-          <includeTarget>true</includeTarget>
+          <appName>microservicediscover</appName>
+          
          
         </configuration>
       </plugin>

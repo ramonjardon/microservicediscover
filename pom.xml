@@ -56,7 +56,22 @@
           </requiresUnpack>
         </configuration>
       </plugin>
-    
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>1.0.0</version>
+        <configuration>
+          <appName>${heroku.appName}</appName>
+          <includeTarget>true</includeTarget>
+         
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>

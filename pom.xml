@@ -9,7 +9,9 @@
   <properties>
     <spring.cloud-version>Hoxton.SR8</spring.cloud-version>
      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>org.emme.msa.discover.Application</start-class>
+     <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11s</maven.compiler.target>
+	<start-class>org.emme.msa.discover.Application</start-class>
     <java.version>11</java.version>
 </properties>
 <dependencyManagement>
